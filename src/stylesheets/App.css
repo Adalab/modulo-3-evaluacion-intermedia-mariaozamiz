@@ -1,0 +1,23 @@
+.pokemon-list__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.pokemon-card {
+    background-color: rgb(222, 222, 255);
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 15px;
+    text-transform: capitalize;
+    display: bock;
+}
