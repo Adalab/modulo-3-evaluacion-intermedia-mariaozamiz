@@ -1,7 +1,6 @@
 import React from 'react';
 
 function Pokemon(props) {
-    console.log(props);
     return (
         <div>
             <div className="pokemon-image__frame">
