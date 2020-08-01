@@ -1,19 +1,34 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
+const renderTypes = (props) => {
+    return (
+        props.typesList.map((pokemonType, index) => {
+        return (<li key={index} className="pokemon-type">{pokemonType}</li>)})
+    )
+};
+
 
 function Pokemon(props) {
     return (
         <div>
             <div className="pokemon-image__frame">
-                <img src={props.url} alt={`${props.name}-pic`} />
+                <img src={props.url} alt={`foto de ${props.name}`} />
             </div>
             <div className="pokemon-name__frame">
                 <h2>{props.name}</h2>
             </div>
-            <div className="pokemon-type__frame">
-                <span>{props.type}</span>
-            </div>
+                <ul className="pokemon-type__list">
+                {renderTypes(props)}
+             </ul>
         </div>
     );
 }
+
+Pokemon.propTypes = {
+    name: PropTypes.string,
+    url: PropTypes.string,
+    typesList: PropTypes.array
+  };
 
 export default Pokemon;
