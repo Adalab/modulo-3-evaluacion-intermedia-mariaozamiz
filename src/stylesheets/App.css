@@ -21,3 +21,13 @@ h2 {
     text-transform: capitalize;
     display: bock;
 }
+
+.pokemon-type {
+    background-color: lightgray;
+    display: inline;
+    padding: 2px;
+    margin-right: 4px;
+    border-radius: 5px;
+    font-size: 12px;
+    
+}

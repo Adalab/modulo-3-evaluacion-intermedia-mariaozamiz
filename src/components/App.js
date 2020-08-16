@@ -3,8 +3,6 @@ import '../stylesheets/App.css';
 import PokeList from './Pokelist';
 import pokemondata from '../data/pokemondata.json';
 
-console.log(pokemondata);
-
 function App() {
     const [pokemons, setPokemons] = useState(pokemondata);
     return (
